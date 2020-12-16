@@ -6,9 +6,11 @@ name: Publish Docker Image
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
+    tags:
+      - 'v*'
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   release:
     types:
       - published
@@ -50,16 +52,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_PASSWORD }}
-
-      - name: Build image
-        uses: docker/build-push-action@v2
-        with:
-          tags: ${{ steps.docker_meta.outputs.tags }}
-          file: ./Dockerfile
      
       - name: Push image
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ steps.docker_meta.outputs.tags }}
           file: ./Dockerfile
+          tags: ${{ steps.docker_meta.outputs.tags }}
+          labels: ${{ steps.docker_meta.outputs.labels }}
