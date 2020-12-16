@@ -1,2 +1,10 @@
-# docker_container
-Build and push Docker container with compiled Gretl to GHCR
+# Build and push Gretl Docker Container
+This repository includes a github action workflow for:
+
+1) Building a Docker container using ubuntu:latest with latest available Gretl pulled from the original sourceforge repo and freshly compiled.\
+2) Push the container to GHRC (github container registry) for public use.
+
+
+# References
+- https://youtu.be/FYIRvqdP3pQ \
+- https://youtu.be/09lZdSpeHAk \
