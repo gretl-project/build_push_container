@@ -5,7 +5,8 @@ ARG GRETL_VERSION="latest"
 
 FROM ${IMAGE}
 
-COPY ./src/compile-gretl.sh .  # copy shell script with commands for compilation
+# copy shell script with commands for compilation
+COPY ./src/compile-gretl.sh .
 
 LABEL maintainer=${MAINTAINER}
 LABEL version=${VERSION}
