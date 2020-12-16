@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'The Gretl project thanks you for your first issue. Your initiative is very important to us.'
+        pr-message: 'Wow, you have just send your first pull request to the Gretl project. Thanks for your activity!'
