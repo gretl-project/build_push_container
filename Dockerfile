@@ -10,7 +10,7 @@ COPY ./src/compile-gretl.sh .
 
 LABEL maintainer=${MAINTAINER}
 LABEL version=${VERSION}
-LABEL description="Docker image based on ${IMAGE} with compiled Gretl version ${GRETL_VERSION}. Extra tools installed: git, nano."
+LABEL description="Docker image based on $IMAGE with compiled Gretl version $GRETL_VERSION. Extra tools installed: git, nano."
 
 # Disable Prompt During Packages Installation
 ARG DEBIAN_FRONTEND=noninteractive
