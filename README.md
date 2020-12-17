@@ -1,6 +1,7 @@
 # Build and push Gretl Docker image
-![Publish Docker Image](https://github.com/gretl-project/build_push_container/blob/main/.github/workflows/build-publish.yml/badge.svg)
-![Greet everyone](https://github.com/gretl-project/build_push_container/blob/main/.github/workflows/greetings.yml/badge.svg)
+[![Actions Status](https://github.com/gretl-project/build_push_container/workflows/Publish%20Docker%20Image/badge.svg)](https://github.com/gretl-project/build_push_container/actions)
+
+[![Actions Status](https://github.com/gretl-project/build_push_container/workflows/Greetings/badge.svg)](https://github.com/gretl-project/build_push_container/actions)
 
 This repository includes a github action workflow for:
 
