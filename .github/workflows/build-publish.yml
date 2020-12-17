@@ -2,7 +2,7 @@
 
 name: Publish Docker Image
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -15,9 +15,9 @@ on:
     types:
       - published
   # * is a special character in YAML so you have to quote this string
-  # https://crontab.guru/#0_8_17_12_*
+  # https://crontab.guru/#0_7_1_*_*
   schedule:
-  - cron: '10 18 16 12 *'
+  - cron: '0 7 1 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -56,13 +56,13 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_PASSWORD }}
-     
+
       - name: Build image
         uses: docker/build-push-action@v2
         with:
           tags: ${{ steps.docker_meta.outputs.tags }}
           file: ./Dockerfile
-     
+
       - name: Push image
         uses: docker/build-push-action@v2
         with:

@@ -1,4 +1,4 @@
-ARG IMAGE=ubuntu:latest
+ARG IMAGE=ubuntu:20.04
 ARG VERSION="0.1"
 ARG MAINTAINER="Gretl Team"
 ARG GRETL_VERSION="latest"
