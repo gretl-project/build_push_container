@@ -1,4 +1,7 @@
 # Build and push Gretl Docker image
+https://github.com/gretl-project/build_push_container/workflows/"Publish+Docker+Image"/badge.svg
+
+
 This repository includes a github action workflow for:
 
 1) Building a Docker container using ubuntu:20.04 with latest available Gretl pulled from the original sourceforge repo and freshly compiled.\
