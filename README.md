@@ -8,6 +8,9 @@ This repository includes a github action workflow for:
 1) Building a Docker container using ubuntu:20.04 with latest available Gretl pulled from the original sourceforge.org repo and freshly compiled.\
 2) Push the container to GHRC (github container registry) for public use.
 
+The public Gretl Docker image can be obtained from here:
+https://github.com/users/gretl-project/packages/container/package/docker_container
+
 
 ## Cron job for building the image
 The Cron build process is scheduled to "0 18 * * 5" (Every Friday at 06:00 pm).
