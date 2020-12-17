@@ -1,5 +1,6 @@
 # Build and push Gretl Docker image
-!["Publish Docker Image"](https://github.com/gretl-project/build_push_container/workflows/"Publish+Docker+Image"/badge.svg)
+![Publish Docker Image](https://github.com/gretl-project/build_push_container/blob/main/.github/workflows/build-publish.yml/badge.svg)
+![Greet everyone](https://github.com/gretl-project/build_push_container/blob/main/.github/workflows/greetings.yml/badge.svg)
 
 This repository includes a github action workflow for:
 
@@ -9,7 +10,6 @@ This repository includes a github action workflow for:
 
 ## Cron job for building the image
 The Cron build process is scheduled to "0 7 1 * *" (“At 07:00 on day-of-month 1.”).
-
 
 
 # References + helper videos on github actions, container etc.
